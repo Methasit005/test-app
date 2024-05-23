@@ -1,0 +1,106 @@
+<main>
+  <div class="header">
+    <img src="./../assets/images.jpg" alt="" style="width: 50px;">
+    <ul>
+      <li>
+        Menu 1
+      </li>
+      <li>
+        Menu 2
+      </li>
+      <li>
+        Menu 3
+      </li>
+    </ul>
+  </div>
+  <div class="body">
+    <div class="grid-container">
+      <div class="text-item one">
+        <div class="t">
+          1 is a flys. 
+        </div>
+      </div>
+      <div class="text-item two">2 is a fish.</div>
+      <div class="text-item three">3 is not a tree.</div>
+      <div class="text-item four">4 will win three of a kind.</div>
+      <div class="text-item five">5 is a laughing.</div>
+      <div class="text-item six">Prepare your mop.</div>
+    </div>
+  </div>
+</main>
+<style>
+  .header{
+    background-color: #808080;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 50px;
+  }
+  .header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .header ul li{
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .body{
+    background-color: #c2c5c2;
+    height: auto;
+    padding: 10px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    height: 100vh;
+  }
+  .text-item {
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .one {
+      background-color: #533737;
+      grid-column: 1 / span 2;
+      grid-row: 1 / 2;
+  }
+
+  .two {
+      background-color: #37533d;
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+  }
+
+  .three {
+      background-color: #37533d;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+  }
+
+  .four {
+      background-color: #374f53;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+  }
+  .five {
+      background-color: #533751;
+      grid-column: 3 / 4;
+      grid-row: 1 / 4;
+  }
+
+  .six {
+      background-color: #535237;
+      grid-column: 1 / span 2;
+      grid-row: 3 / 4;
+      text-align: center;
+  }
+</style>
